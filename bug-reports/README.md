@@ -1,2 +1,3 @@
-# Bug Reports
-This folder contains bug reports found during manual testing.
+# Bug Report
+
+Folder ini berisi laporan bug yang ditemukan selama proses pengujian manual pada aplikasi SauceDemo.
