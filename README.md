@@ -1,31 +1,32 @@
-# QA Portfolio – Sahrija Gunawan
+# Portofolio Quality Assurance – Sahrija Gunawan
 
-## About Me
-I am a beginner Software Quality Assurance enthusiast who is learning and practicing manual software testing.  
-I am interested in ensuring software quality through structured testing, clear documentation, and attention to detail.
+## Tentang Saya
+Saya adalah junior di bidang Software Quality Assurance yang memiliki ketertarikan pada software tester secara manual dan automation.  
+Saya terbiasa membuat test case, melakukan functional test, bug report, dan mendokumentasikan hasil pengujian secara terstruktur.
 
-This repository contains my QA portfolio and sample testing documents.
+Repository ini berisi portofolio QA saya yang dibuat menggunakan website demo untuk latihan dan simulasi real test.
 
 ## Skills
 - Manual Testing
-- Test Case Design
+- Penyusunan Test Case
 - Bug Reporting
 - Exploratory Testing
-- Basic understanding of SDLC & STLC
+- Pemahaman dasar SDLC & STLC
 
 ## Tools
-- Google Sheets / Excel
+- Google Sheets / Microsoft Excel
 - GitHub
 
-## Portfolio Contents
-- Test Cases
-- Bug Reports
+## Isi Portofolio
+- Test Case
+- Bug Report
 - Test Plan
-- Exploratory Testing Notes
+- API Testing
 
-## Tested Application
-This portfolio uses **demo / sample web applications** for testing purposes.
+## Aplikasi yang Diuji
+Pengujian dilakukan menggunakan website demo:
+- SauceDemo (https://www.saucedemo.com/)
 
-## Contact
-- GitHub: https://github.com/sahrijagunawan08/qa-portfolio
+## Kontak
+- GitHub: https://github.com/sahrijagunawan08
 - Email: sahrijagunawan.08@gmail.com
