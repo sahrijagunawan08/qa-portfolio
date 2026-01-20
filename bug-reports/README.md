@@ -1,3 +1,3 @@
 # Bug Report
 
-Folder ini berisi laporan bug yang ditemukan selama proses pengujian manual pada aplikasi SauceDemo.
+Folder ini berisi laporan UI bug yang ditemukan pada demo sebuah aplikasi.
