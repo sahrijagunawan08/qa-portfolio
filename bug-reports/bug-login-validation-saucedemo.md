@@ -1,25 +1,25 @@
-# Bug Report – Login Validation – SauceDemo
+# Bug Report – Validasi Login SauceDemo
 
-## Bug Title
-Login validation only displays username error when password field is filled
+## Judul Bug
+Pesan validasi login hanya menampilkan error username saat password sudah diisi
 
 ## Environment
-- Application: SauceDemo
+- Aplikasi: SauceDemo
 - URL: https://www.saucedemo.com/
-- Browser: Chrome (latest)
-- OS: Windows 10
+- Browser: Google Chrome (versi terbaru)
+- Sistem Operasi: Windows 10
 
-## Steps to Reproduce
-1. Open SauceDemo login page
-2. Leave Username field empty
-3. Enter password: secret_sauce
-4. Click Login button
+## Langkah Reproduksi
+1. Buka halaman login SauceDemo
+2. Biarkan field Username kosong
+3. Masukkan password "secret_sauce"
+4. Klik tombol Login
 
-## Expected Result
-Validation message should clearly indicate required fields or guide user to complete login properly
+## Hasil yang Diharapkan
+Pesan validasi menampilkan informasi yang jelas mengenai field yang harus diisi
 
-## Actual Result
-Error message displayed:
+## Hasil Aktual
+Pesan error yang muncul:
 Epic sadface: Username is required
 
 ## Severity
@@ -31,5 +31,5 @@ Medium
 ## Status
 Open
 
-## Notes
-This behavior may confuse users because password was already filled but only username validation is shown.
+## Catatan
+Pesan error berpotensi membingungkan pengguna karena hanya menampilkan error username meskipun password telah diisi.
