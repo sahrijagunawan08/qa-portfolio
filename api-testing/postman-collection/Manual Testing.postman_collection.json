@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "735859cd-83e3-45f6-84a6-d1cd0fed532c",
+		"name": "Manual Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30994604"
+	},
+	"item": [
+		{
+			"name": "get single user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				},
+				"description": "Deskripsi:  \nMendapatkan data tunggal dari pengguna\n\nMethod: GET\n\nEndpoint: /api/users/2\n\nExpected Result:\n\nStatus: 200 OK\n\nResponse berupa data: id, email, first name, last name, dan avatar"
+			},
+			"response": []
+		},
+		{
+			"name": "Single user not found",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users/23",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"23"
+					]
+				},
+				"description": "Deskripsi:  \nGagal Mendapatkan data tunggal dari pengguna\n\nMethod: GET\n\nEndpoint: /api/users/23\n\nExpected Result:\n\nStatus: 404 Not Found\n\nResponse kosong"
+			},
+			"response": []
+		},
+		{
+			"name": "get list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://reqres.in/api/unknown",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown"
+					]
+				},
+				"description": "Deskripsi:  \nMendapatkan data list dari website\n\nMethod: GET\n\nEndpoint: /api/unknown\n\nExpected Result:\n\nStatus: 200 OK\n\nResponse berupa data list website."
+			},
+			"response": []
+		},
+		{
+			"name": "get single list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://reqres.in/api/unknown/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown",
+						"2"
+					]
+				},
+				"description": "Deskripsi:  \nMendapatkan data tunggal dari website\n\nMethod: GET\n\nEndpoint: api/unknown/2\n\nExpected Result:\n\nStatus: 200 OK\n\nResponse berupa single data"
+			},
+			"response": []
+		},
+		{
+			"name": "get single list not found",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://reqres.in/api/unknown/23",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown",
+						"23"
+					]
+				},
+				"description": "Deskripsi:  \nGagal Mendapatkan data tunggal dari website\n\nMethod: GET\n\nEndpoint: /api/unknown/23\n\nExpected Result:\n\nStatus: 404 Not Found\n\nResponse kosong"
+			},
+			"response": []
+		},
+		{
+			"name": "Register failed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sydney@fife\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/login",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Deskripsi:  \ngagal register\n\nMethod: POST\n\nEndpoint: /api/register\n\nExpected Result:\n\nStatus: 400 Bad Request\n\nResponse: error \"missing password\""
+			},
+			"response": []
+		},
+		{
+			"name": "Login Failed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"peter@klaven\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/login",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Deskripsi:  \nlogin failed\n\nMethod: POST\n\nEndpoint: /api/login\n\nExpected Result:\n\nStatus: 400 Bad Request\n\nResponse berisi keterangan error missing password"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				},
+				"description": "Deskripsi:  \nupdate data user\n\nMethod: PUT\n\nEndpoint: /api/users/2\n\nExpected Result:\n\nStatus: 200 OK\n\nResponse berisi name, job, dan updatedAT"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				},
+				"description": "Deskripsi:  \ndelete data user\n\nMethod: DELETE\n\nEndpoint: /api/users/2\n\nExpected Result:\n\nStatus: 204 No Content\n\nResponse berisi body kosong 204 No Content"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": ""
+		}
+	]
+}
