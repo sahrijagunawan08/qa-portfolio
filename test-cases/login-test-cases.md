@@ -1,101 +1,110 @@
-# Login Feature – Test Cases
+# Login Test Cases – SauceDemo
 
-## Feature Description
-Login functionality allows registered users to access the application using email and password.
+## Application Information
+- Application Name: SauceDemo
+- URL: https://www.saucedemo.com/
+- Feature Tested: Login
+- Tester: Sahrija Gunawan
 
 ---
 
-## Test Cases
-
-### TC-LOGIN-001
-**Test Scenario:** Login with valid email and valid password  
-**Precondition:** User is registered  
+## TC-LOGIN-001
+**Scenario:** Login with valid username and valid password  
+**Test Data:**  
+- Username: standard_user  
+- Password: secret_sauce  
 
 **Steps:**
-1. Open login page
-2. Enter valid email
+1. Open https://www.saucedemo.com/
+2. Enter valid username
 3. Enter valid password
 4. Click Login button
 
 **Expected Result:**  
-User is successfully logged in and redirected to dashboard
+User is redirected to the Products page
 
 ---
 
-### TC-LOGIN-002
-**Test Scenario:** Login with valid email and invalid password  
+## TC-LOGIN-002
+**Scenario:** Login with valid username and invalid password  
 
 **Steps:**
-1. Open login page
-2. Enter valid email
+1. Open SauceDemo login page
+2. Enter valid username
 3. Enter invalid password
 4. Click Login button
 
 **Expected Result:**  
-Error message is displayed indicating incorrect credentials
+Error message displayed: "Username and password do not match"
 
 ---
 
-### TC-LOGIN-003
-**Test Scenario:** Login with unregistered email  
+## TC-LOGIN-003
+**Scenario:** Login with invalid username and valid password  
 
 **Steps:**
-1. Open login page
-2. Enter unregistered email
-3. Enter any password
+1. Open SauceDemo login page
+2. Enter invalid username
+3. Enter valid password
 4. Click Login button
 
 **Expected Result:**  
-Error message is displayed indicating user not found
+Error message displayed indicating invalid credentials
 
 ---
 
-### TC-LOGIN-004
-**Test Scenario:** Login with empty email and password fields  
+## TC-LOGIN-004
+**Scenario:** Login with empty username and password  
 
 **Steps:**
-1. Open login page
-2. Leave email field empty
+1. Open SauceDemo login page
+2. Leave username field empty
 3. Leave password field empty
 4. Click Login button
 
 **Expected Result:**  
-Validation message is displayed for required fields
+Error message displayed: "Username is required"
 
 ---
 
-### TC-LOGIN-005
-**Test Scenario:** Login with valid email and empty password  
+## TC-LOGIN-005
+**Scenario:** Login with empty password  
 
 **Steps:**
-1. Open login page
-2. Enter valid email
+1. Open SauceDemo login page
+2. Enter valid username
 3. Leave password field empty
 4. Click Login button
 
 **Expected Result:**  
-Password required validation message is displayed
+Error message displayed: "Password is required"
 
 ---
 
-### TC-LOGIN-006
-**Test Scenario:** Password field masked input  
+## TC-LOGIN-006
+**Scenario:** Verify password field masking  
 
 **Steps:**
-1. Open login page
-2. Enter password in password field
+1. Open SauceDemo login page
+2. Enter password into password field
 
 **Expected Result:**  
-Password characters are masked (hidden)
+Password characters are masked (shown as dots)
 
 ---
 
-### TC-LOGIN-007
-**Test Scenario:** Login button disabled when fields are empty  
+## TC-LOGIN-007
+**Scenario:** Login with locked out user  
+
+**Test Data:**  
+- Username: locked_out_user  
+- Password: secret_sauce  
 
 **Steps:**
-1. Open login page
-2. Do not enter email and password
+1. Open SauceDemo login page
+2. Enter locked out username
+3. Enter valid password
+4. Click Login button
 
 **Expected Result:**  
-Login button is disabled or not clickable
+Error message displayed indicating the user is locked out
