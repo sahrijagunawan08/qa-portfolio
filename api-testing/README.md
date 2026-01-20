@@ -11,10 +11,14 @@ Pengujian API dilakukan menggunakan Postman pada public API Reqres (https://reqr
 - Automated API Testing (Postman Script)
 
 ## Endpoint yang Diuji
+- GET /api/unknown
+- GET /api/unknown/{id}
 - GET /api/users
 - GET /api/users/{id}
+- POST /api/register
 - POST /api/login
 - PUT /api/users/{id}
+- PATCH /api/users/{id)
 - DELETE /api/users/{id}
 
 ## Artefak Pengujian
