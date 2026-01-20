@@ -1,110 +1,111 @@
-# Login Test Cases – SauceDemo
+# Test Case Login – SauceDemo
 
-## Application Information
-- Application Name: SauceDemo
+## Informasi Aplikasi
+- Nama Aplikasi: SauceDemo
 - URL: https://www.saucedemo.com/
-- Feature Tested: Login
+- Fitur yang Diuji: Login
 - Tester: Sahrija Gunawan
 
 ---
 
 ## TC-LOGIN-001
-**Scenario:** Login with valid username and valid password  
-**Test Data:**  
+**Skenario:** Login dengan username dan password valid  
+
+**Data Uji:**
 - Username: standard_user  
 - Password: secret_sauce  
 
-**Steps:**
-1. Open https://www.saucedemo.com/
-2. Enter valid username
-3. Enter valid password
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login SauceDemo
+2. Masukkan username valid
+3. Masukkan password valid
+4. Klik tombol Login
 
 **Expected Result:**  
-User is redirected to the Products page
+Pengguna berhasil login dan diarahkan ke halaman Products
 
 ---
 
 ## TC-LOGIN-002
-**Scenario:** Login with valid username and invalid password  
+**Skenario:** Login dengan username valid dan password tidak valid  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Enter valid username
-3. Enter invalid password
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Masukkan username valid
+3. Masukkan password tidak valid
+4. Klik tombol Login
 
 **Expected Result:**  
-Error message displayed: "Username and password do not match"
+Pesan error ditampilkan bahwa username atau password tidak sesuai
 
 ---
 
 ## TC-LOGIN-003
-**Scenario:** Login with invalid username and valid password  
+**Skenario:** Login dengan username tidak terdaftar  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Enter invalid username
-3. Enter valid password
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Masukkan username tidak valid
+3. Masukkan password valid
+4. Klik tombol Login
 
 **Expected Result:**  
-Error message displayed indicating invalid credentials
+Pesan error ditampilkan bahwa user tidak ditemukan
 
 ---
 
 ## TC-LOGIN-004
-**Scenario:** Login with empty username and password  
+**Skenario:** Login dengan username dan password kosong  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Leave username field empty
-3. Leave password field empty
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Biarkan field username kosong
+3. Biarkan field password kosong
+4. Klik tombol Login
 
 **Expected Result:**  
-Error message displayed: "Username is required"
+Pesan error “Username is required” ditampilkan
 
 ---
 
 ## TC-LOGIN-005
-**Scenario:** Login with empty password  
+**Skenario:** Login dengan password kosong  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Enter valid username
-3. Leave password field empty
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Masukkan username valid
+3. Biarkan password kosong
+4. Klik tombol Login
 
 **Expected Result:**  
-Error message displayed: "Password is required"
+Pesan error “Password is required” ditampilkan
 
 ---
 
 ## TC-LOGIN-006
-**Scenario:** Verify password field masking  
+**Skenario:** Verifikasi input password tersembunyi  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Enter password into password field
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Masukkan password pada field password
 
 **Expected Result:**  
-Password characters are masked (shown as dots)
+Karakter password ditampilkan dalam bentuk tersembunyi (masking)
 
 ---
 
 ## TC-LOGIN-007
-**Scenario:** Login with locked out user  
+**Skenario:** Login menggunakan akun locked out  
 
-**Test Data:**  
+**Data Uji:**
 - Username: locked_out_user  
 - Password: secret_sauce  
 
-**Steps:**
-1. Open SauceDemo login page
-2. Enter locked out username
-3. Enter valid password
-4. Click Login button
+**Langkah Pengujian:**
+1. Buka halaman login
+2. Masukkan username locked out
+3. Masukkan password
+4. Klik tombol Login
 
 **Expected Result:**  
-Error message displayed indicating the user is locked out
+Pesan error ditampilkan bahwa user telah dikunci
